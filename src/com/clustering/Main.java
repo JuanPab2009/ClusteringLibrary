@@ -62,13 +62,6 @@ public class Main {
 
             // Obtener los clusters
             List<Cluster> clusters = kmeans.getClusters();
-            for (int i = 0; i < clusters.size(); i++) {
-                Cluster cluster = clusters.get(i);
-                System.out.println("Cluster " + (i + 1) + ":");
-                System.out.println("Número de puntos: " + cluster.getPoints().size());
-                System.out.println("Centroide: " + cluster.getCentroid());
-                System.out.println();
-            }
 
             // Calcular el SSE
             double sse = kmeans.calculateSSE();
